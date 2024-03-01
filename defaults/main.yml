@@ -1,6 +1,6 @@
 postgresql_apt_key_url: https://www.postgresql.org/media/keys/ACCC4CF8.asc
 postgresql_apt_repository: deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main
-postgresql_version: 14
+postgresql_version: 13
 postgresql_datadir: '/var/lib/postgresql/{{ postgresql_version }}/main'
 postgresql_confdir: '/etc/postgresql/{{ postgresql_version }}/main'
 
