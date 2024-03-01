@@ -1,1 +1,1 @@
-# postgresql
+# Ansible role postgresql

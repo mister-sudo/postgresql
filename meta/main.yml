@@ -1,0 +1,6 @@
+galaxy_info:
+  role_name: postgresql
+  author: mister-sudo
+  description: PostgreSql installation
+  license: BSD
+dependencies: []
