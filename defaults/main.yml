@@ -1,12 +1,11 @@
 postgresql_apt_key_url: https://www.postgresql.org/media/keys/ACCC4CF8.asc
 postgresql_apt_repository: deb http://apt.postgresql.org/pub/repos/apt/ jammy-pgdg main
 postgresql_version: 13
-postgresql_datadir: '/data/psql/{{ postgresql_version }}/main'
-postgresql_confdir: '/data/psql/{{ postgresql_version }}/main'
+postgresql_datadir: '/var/lib/postgresql/{{ postgresql_version }}/main'
+postgresql_confdir: '/etc/postgresql/{{ postgresql_version }}/main'
 
 postgresql_config:
   listen_addresses: "'*'"
-  data_directory: '{{ postgresql_datadir }}'
 
 postgresql_hba_records:
   - { type: local, user: all, database: all, method: peer }
